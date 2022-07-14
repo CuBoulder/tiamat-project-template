@@ -9,7 +9,7 @@ tooling:
     description: Install A Drupal 9 site with the Testing Profile
     service: appserver
     cmd: >
-      echo yes | /app/vendor/bin/drush si ucb2021_profile
+      echo yes | /app/vendor/bin/drush si tiamat_profile
       --db-url="mysql://lamp:lamp@database:3306/lamp"
       --site-name="Web Express V2 Test Site"
       --account-name="admin" --account-pass="tiamat.test"

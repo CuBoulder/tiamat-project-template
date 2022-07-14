@@ -1,6 +1,6 @@
 {
-    "name": "cu-boulder/site-template",
-    "description": "Project template for Drupal 9",
+    "name": "cu-boulder/D9-template" 
+    "description": "Drupal 9 project template for CU Boulder",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
