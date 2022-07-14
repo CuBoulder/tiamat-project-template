@@ -1,0 +1,45 @@
+name: Update Prod composer.json
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'composer.json'
+      - 'composer.lock'
+jobs:
+  create_composer_json:
+    name: Create Production composer.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: Setup Composer
+        run: |
+          EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
+          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+          ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+          if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
+          then
+            rm composer-setup.php
+            exit 1
+          fi
+          php composer-setup.php --quiet --filename=composer
+          RESULT=$?
+          rm composer-setup.php
+          exit $RESULT
+      - name: Update composer.json
+        run: php .github/scripts/generate.php
+      - name: Update composer.lock
+        run: composer update
+      - name: Validate composer.json
+        run: composer validate -vv
+      - name: Push to production branch
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+          git add composer.*
+          git commit -m "automated update"
+          git push -f https://${{secrets.GITHUB_TOKEN}}@github.com/CuBoulder/nextpress-project-template.git main:production
