@@ -10,17 +10,13 @@
     },
     "repositories": [
         { "type": "composer", "url": "https://packages.drupal.org/8" },
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb2021_base.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb2021_profile.git"},
+        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-custom-entities.git"},
+        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-profile.git"},
         { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_site_contact_info.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_custom_paragraphs.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_custom_page_types.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_shortcodes.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_focal_image_enable.git"}
+        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-theme.git"}
     ],
     "require": {
         "composer/installers": "^1.9",
-        "cu-boulder/ucb_site_contact_info": "dev-main",
         "cu-boulder/ucb_default_content": "dev-main",
         "cu-boulder/ucb_focal_image_enable": "dev-main",
         "cweagans/composer-patches": "^1.7",
