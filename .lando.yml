@@ -4,7 +4,7 @@ tooling:
   drush:
     description: Run drush commands
     service: appserver
-    cmd: "/vendor/bin/drush --root=/app"
+    cmd: "/app/vendor/bin/drush --root=/app"
   install-site:
     description: Install A Drupal 9 site with the Testing Profile
     service: appserver
