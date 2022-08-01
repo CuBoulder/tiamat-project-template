@@ -17,10 +17,14 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cu-boulder/boulder_d9_base": "dev-main",
+        "cu-boulder/boulder_d9_profile": "dev-main",
+        "cu-boulder/ucb_d9_custom_entities": "dev-main",
         "cu-boulder/ucb_default_content": "dev-main",
         "cu-boulder/ucb_focal_image_enable": "dev-main",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/better_social_sharing_buttons": "^3.2",
         "drupal/consumer_image_styles": "^4.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
@@ -37,8 +41,7 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.0",
-        "simplesamlphp/simplesamlphp": "^1.18",
-        "drupal/better_social_sharing_buttons": "^3.2"
+        "simplesamlphp/simplesamlphp": "^1.18"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
