@@ -16,8 +16,8 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "cu-boulder/ucb_site_configuration": "dev-tiamat",
-		"cu-boulder/ucb_user_invite": "dev-main",
+        "cu-boulder/ucb_site_configuration": "dev-main",
+        "cu-boulder/ucb_user_invite": "dev-main",
         "cu-boulder/boulder_d9_base": "dev-main",
         "cu-boulder/boulder_d9_profile": "dev-main",
         "cu-boulder/ucb_d9_custom_entities": "dev-main",
