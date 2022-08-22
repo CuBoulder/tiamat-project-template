@@ -10,10 +10,8 @@
     },
     "repositories": [
         { "type": "composer", "url": "https://packages.drupal.org/8" },
-        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-custom-entities.git"},
         { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-profile.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-theme.git"},
-        { "type" : "git", "url" : "https://github.com/CuBoulder/ucb_person_title.git"}
+        { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-theme.git"}
     ],
     "require": {
         "composer/installers": "^1.9",
