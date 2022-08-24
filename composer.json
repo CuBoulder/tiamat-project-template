@@ -90,7 +90,7 @@
             },
             
             "drupal/core": {
-                "Reusable Block for Layout Builder": "https://www.drupal.org/files/issues/2022-08-09/Add-reusable-option-to-inline-block-creation-2999491-93.patch"     
+                "Reusable Block for Layout Builder": "https://www.drupal.org/files/issues/2022-04-06/2999491-82.patch"     
             }
         },
         "installer-paths": {
