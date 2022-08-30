@@ -18,6 +18,10 @@ tooling:
       echo "\nLogin with Username: admin Password: tiamat.test" &&
       php -r "echo 'Site URL: ' . json_decode(getenv('LANDO_INFO'), TRUE)['appserver']['urls'][0];" &&
       echo "\n"
+  nosso:
+    description: Uninstall simpleSAMLphp_auth module to allow local authentication
+    service: appserver
+    cmd: "/app/vendor/bin/drush pmu simplesamlphp_auth" 
   behat:
     description: Run Behat Tests
     service: appserver
