@@ -15,7 +15,7 @@
         { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-theme.git"}
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.1",
         "cu-boulder/boulder_d9_base": "dev-main",
         "cu-boulder/boulder_d9_profile": "dev-main",
         "cu-boulder/ucb_d9_custom_entities": "dev-main",
@@ -29,8 +29,8 @@
         "drupal/antibot": "^2.0",
         "drupal/better_social_sharing_buttons": "^3.2",
         "drupal/consumer_image_styles": "^4.0",
-        "drupal/core-composer-scaffold": "^9.1",
-        "drupal/core-recommended": "^9.1",
+        "drupal/core-composer-scaffold": "^9.4",
+        "drupal/core-recommended": "^9.4",
         "drupal/entity_embed": "^1.1",
         "drupal/features": "^3.12",
         "drupal/field_group": "^3.1",
@@ -44,7 +44,7 @@
         "drupal/simplesamlphp_auth": "^3.3",
         "drupal/smtp": "^1.0",
         "drupal/twig_tweak": "^3.1",
-        "drupal/webform": "^6.1",
+        "drupal/webform": "^6.2",
         "drush/drush": "^10.0",
         "simplesamlphp/simplesamlphp": "^1.18"
     },
