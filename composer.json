@@ -29,6 +29,7 @@
         "cu-boulder/ucb_user_invite": "dev-main",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/aggregator": "^1.0",
         "drupal/antibot": "^2.0",
         "drupal/better_social_sharing_buttons": "^3.2",
         "drupal/consumer_image_styles": "^4.0",
@@ -80,9 +81,9 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "simplesamlphp/composer-module-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "simplesamlphp/composer-module-installer": true
         }
     },
     "extra": {
