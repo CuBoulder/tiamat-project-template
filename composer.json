@@ -52,7 +52,8 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/webform": "^6.2",
         "drush/drush": "^11.0",
-        "simplesamlphp/simplesamlphp": "^1.18"
+        "simplesamlphp/simplesamlphp": "^1.18",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
@@ -82,7 +83,8 @@
             "drupal/core-composer-scaffold": true,
             "simplesamlphp/composer-module-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "extra": {
@@ -95,6 +97,11 @@
             "drupal/focal_point": {
                 "Focal Point No Upscale": "https://www.drupal.org/files/issues/2020-05-19/focal_point-do_not_upscale-3048398-16.patch"     
             }
+        },
+	"merge-plugin": {
+            "include": [
+                "composer.libraries.json"
+            ]
         },
         "installer-paths": {
             "core": [
