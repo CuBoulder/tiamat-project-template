@@ -51,6 +51,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.8",
+        "drupal/shortcode": "^2.0",
         "drupal/simple_sitemap": "^4.1",
         "drupal/simplesamlphp_auth": "^3.3",
         "drupal/smtp": "^1.0",
@@ -58,7 +59,8 @@
         "drupal/webform": "^6.2",
         "drush/drush": "^11.0",
         "simplesamlphp/simplesamlphp": "^1.18",
-        "wikimedia/composer-merge-plugin": "^2.0"
+        "wikimedia/composer-merge-plugin": "^2.0",
+        "cu-boulder/ucb_migration_shortcodes": "dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
@@ -101,6 +103,9 @@
         "patches": {
             "drupal/focal_point": {
                 "Focal Point No Upscale": "https://www.drupal.org/files/issues/2020-05-19/focal_point-do_not_upscale-3048398-16.patch"     
+            },
+            "drupal/shortcode": {
+                "D10 CKE5 Shortcode Patch": "https://www.drupal.org/files/issues/2023-03-29/shortcode-ckeditor5-3280596-11.patch"     
             }
         },
 	"merge-plugin": {
