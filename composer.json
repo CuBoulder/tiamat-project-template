@@ -9,7 +9,6 @@
         "chat": "https://www.drupal.org/node/314178"
     },
     "repositories": [
-		{ "type": "git", "url": "https://git.drupalcode.org/issue/fontawesome-3274028.git" },
         { "type": "composer", "url": "https://packages.drupal.org/8" },
         { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-profile.git"},
         { "type" : "git", "url" : "https://github.com/CuBoulder/tiamat-custom-entities.git"},
@@ -35,9 +34,7 @@
         "drupal/aggregator": "^1.0",
         "drupal/antibot": "^2.0",
         "drupal/better_social_sharing_buttons": "^3.2",
-        "drupal/ckeditor5_dev": "^1.0",
         "drupal/consumer_image_styles": "^4.0",
-        "drupal/context": "^4.1",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/devel": "^5.0",
@@ -45,7 +42,6 @@
         "drupal/features": "^3.12",
         "drupal/field_group": "^3.1",
         "drupal/focal_point": "^2.0",
-        "drupal/fontawesome": "dev-ckeditor5",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_lb": "^1.0@beta",
         "drupal/gin_toolbar": "^1.0@beta",
@@ -56,6 +52,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.8",
+		"drupal/shortcode": "^2.0",
         "drupal/simple_sitemap": "^4.1",
         "drupal/simplesamlphp_auth": "^3.3",
         "drupal/site_verify": "^2.0@alpha",
@@ -108,7 +105,10 @@
         "patches": {
             "drupal/focal_point": {
                 "Focal Point No Upscale": "https://www.drupal.org/files/issues/2020-05-19/focal_point-do_not_upscale-3048398-16.patch"     
-            }
+            },
+			"drupal/shortcode": {
+				"D10 CKE5 Shortcode Patch": "https://www.drupal.org/files/issues/2023-03-29/shortcode-ckeditor5-3280596-11.patch"     
+			}
         },
 	"merge-plugin": {
             "include": [
